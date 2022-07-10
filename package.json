@@ -1,0 +1,36 @@
+{
+  "name": "local-storage-exp",
+  "version": "0.0.1",
+  "main": "index.js",
+  "description": "A get/set util of `localStorage` with expired function",
+  "types": "dist/index.d.ts",
+  "module": "dist/lse.mjs",
+  "exports": {
+    ".": {
+      "browser": "./dist/lse.esm-browser.js",
+      "import": "./dist/lse.mjs"
+    },
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
+  "keywords": [
+    "localStorage",
+    "expired"
+  ],
+  "devDependencies": {
+    "jest": "^28.1.2",
+    "jest-environment-jsdom": "^28.1.2",
+    "rollup": "^2.76.0",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
