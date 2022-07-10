@@ -2,7 +2,7 @@
   "name": "local-storage-exp",
   "version": "0.0.1",
   "main": "index.js",
-  "description": "A get/set util of `localStorage` with expired function",
+  "description": "A wrapper of `localStorage`, making it expirable",
   "types": "dist/index.d.ts",
   "module": "dist/lse.mjs",
   "exports": {
@@ -21,6 +21,10 @@
     "dist/*",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noah19846/local-storage-exp.git"
+  },
   "keywords": [
     "localStorage",
     "expired"

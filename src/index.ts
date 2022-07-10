@@ -38,7 +38,7 @@ function set(key: string, value: unknown, lifetime?: string | number) {
   }
 }
 
-function lsc(
+function lse(
   key: string,
   value?: unknown,
   lifetime?: string | number
@@ -50,9 +50,9 @@ function lsc(
   }
 }
 
-lsc.get = get
-lsc.set = set
-lsc.clear = clear
-lsc.remove = remove
+lse.get = get
+lse.set = set
+lse.clear = clear
+lse.remove = remove
 
-export default lsc
+export default lse

@@ -4,9 +4,9 @@ import typescript from 'rollup-plugin-typescript2'
 export default {
   input: 'src/index.ts',
   output: {
-    file: 'dist/lsc.cjs',
+    file: 'dist/lse.cjs',
     format: 'cjs'
-    // file: 'dist/lsc.mjs',
+    // file: 'dist/lse.mjs',
     // format: 'esm'
   },
   plugins: [typescript(/*{ plugin options }*/)]
