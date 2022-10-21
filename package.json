@@ -1,26 +1,30 @@
 {
   "name": "local-storage-exp",
-  "version": "0.0.1",
-  "main": "index.js",
+  "version": "0.1.0",
   "description": "A wrapper of `localStorage`, making it expirable",
-  "types": "dist/index.d.ts",
-  "module": "dist/lse.mjs",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "license": "MIT",
+  "type": "module",
   "exports": {
     ".": {
-      "browser": "./dist/lse.esm-browser.js",
-      "import": "./dist/lse.mjs"
-    },
-    "./package.json": "./package.json",
-    "./dist/*": "./dist/*"
-  },
-  "license": "MIT",
-  "scripts": {
-    "test": "jest"
+      "types": "./types/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
   },
   "files": [
-    "dist/*",
-    "README.md"
+    "dist",
+    "types"
   ],
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest",
+    "lint": "eslint src/**/*.{js,ts} --fix",
+    "build": "vite build",
+    "gen-types": "node script/build-types.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noah19846/local-storage-exp.git"
@@ -30,11 +34,17 @@
     "expired"
   ],
   "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-kisama": "^1.0.0",
     "jest": "^28.1.2",
     "jest-environment-jsdom": "^28.1.2",
+    "prettier": "^2.7.1",
     "rollup": "^2.76.0",
     "rollup-plugin-typescript2": "^0.32.1",
+    "ts-morph": "^16.0.0",
     "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vite": "^3.1.8",
+    "vitest": "^0.24.3"
   }
 }

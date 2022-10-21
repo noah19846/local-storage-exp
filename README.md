@@ -20,5 +20,5 @@ lse('a') // null
 
 
 lse.remove('a') // 同 localStorage.removeItem('a')
-lse.clear() // 同 localStorage.clear()
+lse.clear() // 同 localStorage.clear(), 同时 localStorage 对应 api lsc 上都有同名 api 对应
 ```
