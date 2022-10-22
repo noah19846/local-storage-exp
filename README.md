@@ -10,7 +10,7 @@
 ## 用法
 
 ```
-import lse from 'local-storage-exp'
+import lse from 'local-storage-expirable'
 
 lse('a', 'lalala', 60) // 或 lse.set('a', 'lalala', '1m') number 类型时单位为秒，或者 '7d', '24h', '60m' 分别表示 7 天、24 小时、60 分
 lse('a') // 或 lse.get('a') 'lalala'

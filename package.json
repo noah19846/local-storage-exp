@@ -1,5 +1,5 @@
 {
-  "name": "local-storage-exp",
+  "name": "local-storage-expirable",
   "version": "0.1.0",
   "description": "A wrapper of `localStorage`, making it expirable",
   "main": "./dist/index.umd.cjs",
